@@ -1,0 +1,137 @@
+.lighting {
+    /* margin-left: 500px; */
+    height: 50%;
+    width: 70%;
+    aspect-ratio: 111;
+    filter: blur(185px);
+    background-color: rgba(247, 101, 169, 0.564);
+    /* z-index: 1; */
+    position: absolute;
+  }
+  .lighting1 {
+    margin-left: 500px;
+    height: 50%;
+    width: 30%;
+    aspect-ratio: 11;
+    filter: blur(265px);
+    background-color: rgba(58, 130, 238, 0.656);
+    /* z-index: 1; */
+    position: absolute;
+  }
+  .lighting2 {
+    margin-top: 300px;
+    margin-left: 200px;
+    height: 30%;
+    width: 20%;
+    aspect-ratio: 41;
+    filter: blur(165px);
+    background-color: rgba(99, 248, 91, 0.592);
+    /* z-index: 1; */
+    position: absolute;
+  }
+.notes {
+    display: flex;
+    height: 100%;
+}
+
+.notes * {
+    font-family: sans-serif;
+}
+
+.notes__sidebar {
+    border-right: 2px solid #dddddd;
+    flex-shrink: 0;
+    /* overflow-y: auto; */
+    padding: 1em;
+    width: 300px;
+    z-index: 1;
+}
+
+.notes__add {
+    background: #009578;
+    border: none;
+    border-radius: 7px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 0.75em 0;
+    width: 100%;
+}
+
+.notes__add:hover {
+    background: #00af8c;
+    transform: scale3d(1.02, 1.05,1);
+    transition: all 0.1s ease-in-out ;
+    
+}
+
+.notes__list-item {
+    cursor: pointer;
+}
+
+.notes__list-item--selected {
+    background: #eeeeee;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.notes__small-title,
+.notes__small-updated {
+    padding: 10px;
+}
+
+.notes__small-title {
+    font-size: 1.2em;
+    
+}
+
+.notes__small-body {
+  width: 100%;
+    padding: 0 10px;
+}
+
+.notes__small-updated {
+    color: #817d7d;
+    font-style: italic;
+    text-align: right;
+}
+
+.notes__preview {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 3em;
+    flex-grow: 1;
+    
+}
+
+.notes__title,
+.notes__body {
+    border-radius: 20px;
+    border: none;
+    border-bottom: 2px dotted rgb(12, 14, 12);
+    outline: none;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    z-index: 10;
+}
+
+.notes__title {
+    border-radius: 0px;
+    padding: 15px;
+   background-color: #ffffff00;
+   
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.notes__body {
+    flex-grow: 1;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-top: 2em;
+    resize: none;
+    background-color: #ffffff6f;
+}
